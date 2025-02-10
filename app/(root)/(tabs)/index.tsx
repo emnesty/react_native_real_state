@@ -1,6 +1,5 @@
-import { Link } from "expo-router";
-import { Button, Text, View } from "react-native";
-import SignIn from "@/app/sign-in";
+import { Link } from "expo-router"
+import { Button, Text, View } from "react-native"
 
 export default function Index() {
   return (
@@ -9,15 +8,13 @@ export default function Index() {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-      }}
-    >
-      <Text>Welcome to ReState</Text>
-      <Button title="Sign-In" onPress={() => SignIn()} />
+      }}>
+      <Text className="my-10 text-3xl font-rubik">Welcome to ReState</Text>
       <Link href="/sign-in">Sign-In</Link>
       <Link href="/explore">Explore</Link>
       <Link href="/profile">Profile</Link>
       <Link href="/properties/1">Property</Link>
     </View>
-  );
-  ``;
+  )
+  ;``
 }
